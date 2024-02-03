@@ -96,6 +96,8 @@ class FolderMonitor:
 
         The process repeats in a loop with a sleep interval of 1 second between iterations.
         """
+
+        self.logger.info("Monitor started!")
         try:
             while True:
                 contents = os.listdir(self.folder_path)
