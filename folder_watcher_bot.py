@@ -6,7 +6,6 @@ import shutil
 from aiogram import Bot
 from aiogram.types import FSInputFile
 
-
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     level=logging.INFO,
@@ -47,9 +46,7 @@ class FolderMonitor:
         self.chat_id = chat_id
         self.telegram_bot = telegram_bot
 
-    async def send_photo_and_delete(
-        self, file_path: str, sub_folder: str
-    ) -> None:
+    async def send_photo_and_delete(self, file_path: str, sub_folder: str):
         """
         Sends the file as a photo to the specified chat ID and deletes the file and its folder.
 
