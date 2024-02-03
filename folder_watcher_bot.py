@@ -88,6 +88,15 @@ class FolderMonitor:
                 )
 
     async def monitor_folder(self) -> None:
+        """
+        Monitors the specified folder continuously, sending and deleting files when available.
+
+        The method iterates indefinitely, checking for new files in the specified folder.
+        If a file is found, it is sent as a photo to the specified Telegram chat,
+        and both the file and its containing folder are deleted.
+
+        The process repeats in a loop with a sleep interval of 1 second between iterations.
+        """
         try:
             while True:
                 contents = os.listdir(self.folder_path)
