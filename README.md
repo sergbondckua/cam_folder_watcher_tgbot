@@ -10,7 +10,7 @@ A Python script that monitors a specified folder for file uploads, sends the fil
 
 ## Prerequisites
 
-- Python 3.10 or higher
+- Python 3.9 or higher
 - Required Python packages are listed in the `requirements.txt` file.
 
 ## Setup

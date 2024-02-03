@@ -2,7 +2,6 @@ import asyncio
 import logging
 import os
 import shutil
-from typing import LiteralString
 
 from aiogram import Bot
 from aiogram.types import FSInputFile
@@ -22,7 +21,7 @@ class FileManager:
     def __init__(self, folder_path: str):
         self.folder_path = folder_path
 
-    def find_file_path(self) -> LiteralString | str | bytes:
+    def find_file_path(self) -> str:
         """
         Finds the path of a file within the specified folder.
 
@@ -49,7 +48,7 @@ class FolderMonitor:
         self.telegram_bot = telegram_bot
 
     async def send_photo_and_delete(
-        self, file_path: LiteralString | str | bytes, sub_folder: str
+        self, file_path: str, sub_folder: str
     ) -> None:
         """
         Sends the file as a photo to the specified chat ID and deletes the file and its folder.
