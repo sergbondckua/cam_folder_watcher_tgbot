@@ -25,7 +25,7 @@ A Python script that monitors a specified folder for file uploads, sends the fil
 
 ```dotenv
 API_TOKEN=your_telegram_bot_api_token
-FOLDER_PATH=/path/to/your/upload/folder
+FOLDER_PATH=/path/to/your/ftp/upload/
 CHAT_ID=your_telegram_chat_id
 ```
 
