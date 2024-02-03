@@ -2,6 +2,7 @@
 
 A Python script that monitors a specified folder for file uploads, sends the files as photos to a Telegram chat, and deletes the files and their containing folders.
 
+![img schema](https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-3-030-75836-3_24/MediaObjects/509999_1_En_24_Fig5_HTML.png)
 ## Features
 
 - Monitors a folder for new file uploads.
