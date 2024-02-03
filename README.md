@@ -32,7 +32,7 @@ CHAT_ID=your_telegram_chat_id
 ## Run the script:
 
 ``` bash
-python your_script_name.py
+python main.py
 ```
 
 ## Configuration
